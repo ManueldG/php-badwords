@@ -1,5 +1,9 @@
 
 
+img{
+    margin: 20px auto;
+}
+
 .input{
     display: flex;
     justify-content: center;
