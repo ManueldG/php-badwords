@@ -21,7 +21,7 @@ Stampare a schermo il paragrafo con il testo censurato.
 </head>
 
 <body>
-    <img src="www.mlazzarotto.it/wp-content/uploads/2017/02/lamp_stack.jpg">
+    <img src="img/lamp_stack.jpg">
     <div class="input">
         <form action="index.php" target="_self" method="post">
             <input type="text" name="censura" id="read">
