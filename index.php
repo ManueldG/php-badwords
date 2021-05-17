@@ -22,6 +22,7 @@ Stampare a schermo il paragrafo con il testo censurato.
 <body>
     <form action="index.php" target="_self" method="post">
         <input type="text" name="censura" id="read">
+        
     </form>
 
 
