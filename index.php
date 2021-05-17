@@ -46,7 +46,7 @@ Stampare a schermo il paragrafo con il testo censurato.
 
     echo ("\n<p>Lunghezza:" . strlen($paragraph) . "</p>");
 
-    echo (var_dump($_POST));
+    echo ("<!--".var_dump($_POST)."-->");
 
     $censura = strip_tags($_POST['censura']);
 
