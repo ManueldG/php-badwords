@@ -52,12 +52,14 @@ Stampare a schermo il paragrafo con il testo censurato.
         </head>
 
         <body>
-            <img src="img/lamp_stack.jpg">
+            
             <div class="input">
+                <img src="img/lamp_stack.jpg">
                 <form action="index.php" target="_self" method="post">
                     <input type="text" name="censura" id="read">
                 </form>
-
+            </div>
+            
                 <p>{$paragraph}</p>
 
                 <p>Lunghezza:{$length}</p>
@@ -71,7 +73,7 @@ Stampare a schermo il paragrafo con il testo censurato.
 
 
 
-            </div>
+            
 
         </body>
 

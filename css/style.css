@@ -4,7 +4,7 @@ img{
     margin: 20px auto;
 }
 
-.input{
+.input,p{
     display: flex;
     justify-content: center;
     align-items: center;
