@@ -44,8 +44,8 @@ EOF;
 echo ("<p>".$paragraph."</p>");
                    
 echo ("\n<p>Lunghezza:".strlen($paragraph)."</p>");
-
-echo str_ireplace ( $_GET['censura'] , '***' , $paragraph,);
+$censura = strip_tags($_POST['censura']);
+echo str_ireplace ( $censura , '***' , $paragraph,);
 
 ?>
 
