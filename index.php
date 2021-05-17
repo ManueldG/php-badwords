@@ -78,6 +78,7 @@ Stampare a schermo il paragrafo con il testo censurato.
     </html>
     HTML;
 
+    echo $page;
 
     ?>
 
