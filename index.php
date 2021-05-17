@@ -1,4 +1,3 @@
-
 <!--/*
 esercizio di oggi: PHP Badwords nome cartella / repo: php-badwords Ricordate di creare e mantenere la cartella di esercizio nella cartella htdocs di MAMP DESCRIZIONE: Creare una variabile con assegnato un testo per popolare un paragrafo. Visualizzare a schermo il paragrafo. Visualizzare a schermo la lunghezza di testo del paragrafo. Passare un parametro (query string) nella url chiamato badword con assegnato il valore di una parola scelta da voi, ottenere il suo valore con GET in PHP e sostituire ogni ricorrenza di questa parola, all'interno del testo creato da voi sopra, con tre *. Stampare a schermo il paragrafo con il testo censurato.
 
@@ -10,23 +9,26 @@ Stampare a schermo il paragrafo con il testo censurato.
 */-->
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
-<link rel="stylesheet" href="http://casaalmada.hostinggratis.it/doc/css/reset.css">
-<link rel="stylesheet" href="css/style.css">
-<script src="js/script.js"></script>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title></title>
+    <link rel="stylesheet" href="http://casaalmada.hostinggratis.it/doc/css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
 </head>
+
 <body>
+
+<div class="input">
     <form action="index.php" target="_self" method="post">
-        <input type="text" name="censura" id="read">    
+        <input type="text" name="censura" id="read">
     </form>
+</div>
 
-
-
-<?
+    <?
     $paragraph = <<<EOF
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae libero eu turpis mollis vestibulum id et nisl. Etiam nec egestas arcu. Suspendisse a cursus mauris. Aliquam interdum massa convallis diam rutrum semper. Ut dictum sed mi lobortis porttitor. Donec ultrices sapien at mollis malesuada. Nulla auctor mauris id porta lobortis. Cras ac malesuada eros, sed molestie dui. Vivamus euismod augue efficitur rutrum dictum. Phasellus leo libero, consequat non sapien ac, finibus varius nulla. Nam finibus tempor ex a placerat. Suspendisse eu mattis mauris.
 
@@ -40,17 +42,17 @@ Stampare a schermo il paragrafo con il testo censurato.
 
     EOF;
 
-    echo ("<p>".$paragraph."</p>");
-                    
-    echo ("\n<p>Lunghezza:".strlen($paragraph)."</p>");
+    echo ("<p>" . $paragraph . "</p>");
+
+    echo ("\n<p>Lunghezza:" . strlen($paragraph) . "</p>");
 
     echo (var_dump($_POST));
 
     $censura = strip_tags($_POST['censura']);
 
-    echo str_ireplace ( $censura , '***' , $paragraph,);
-?>
+    echo str_ireplace($censura, '***', $paragraph,);
+    ?>
 
-    </body>
+</body>
+
 </html>
-
