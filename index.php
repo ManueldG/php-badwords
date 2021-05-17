@@ -56,9 +56,10 @@ Stampare a schermo il paragrafo con il testo censurato.
             <div class="input">
 
                 <img src="img/lamp_stack.jpg">
-                
+                inserisci frase da censurare
                 <form action="index.php" target="_self" method="post">
                     <input type="text" name="censura" id="read">
+                    input
                 </form>
 
             </div>
