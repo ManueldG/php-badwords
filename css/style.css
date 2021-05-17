@@ -4,6 +4,11 @@ img{
     margin: 20px auto;
 }
 
+p{
+    margin: 40px;
+
+}
+
 .input,p{
     display: flex;
     justify-content: center;
