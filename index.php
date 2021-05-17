@@ -34,8 +34,8 @@ Stampare a schermo il paragrafo con il testo censurato.
     echo ("-->");
 
     $censura = strip_tags($_POST['censura']);
-
-    $censored = str_ireplace($censura, '***', $paragraph,);
+    $length = strlen($paragraph);
+    $censored = str_ireplace($censura, '***', $paragraph);
 
     $page = <<<HTML
 
@@ -60,7 +60,7 @@ Stampare a schermo il paragrafo con il testo censurato.
 
                 <p>{$paragraph}</p>
 
-                <p>Lunghezza:{strlen($paragraph)}</p>
+                <p>Lunghezza:{$length}</p>
 
                 <p>{$censored}</p>
 
