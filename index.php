@@ -36,7 +36,7 @@ Stampare a schermo il paragrafo con il testo censurato.
 
     $censura = strip_tags($_POST['censura']);
     $length = strlen($paragraph);
-    $censored = str_ireplace(" ".$censura." ", '***', $paragraph);
+    $censored = str_ireplace(" ".$censura." ", ' *** ', $paragraph);
 
     $page = <<<HTML
 
