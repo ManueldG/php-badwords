@@ -30,11 +30,11 @@ Stampare a schermo il paragrafo con il testo censurato.
     
 
     echo ("<!--");
-    var_dump($_POST);
+    var_dump($_GET);
     var_dump($_SERVER);
     echo ("-->");
 
-    $censura = strip_tags($_POST['censura']);
+    $censura = strip_tags($_GET['censura']);
     $length = strlen($paragraph);
     $censored = str_ireplace(" ".$censura." ", ' *** ', $paragraph);
 
@@ -58,7 +58,7 @@ Stampare a schermo il paragrafo con il testo censurato.
 
                 <img src="img/lamp_stack.jpg">
                 inserisci frase da censurare
-                <form action="{$_SERVER['PHP_SELF']}" target="_self" method="post">
+                <form action="{$_SERVER['PHP_SELF']}" target="_self" method="get">
                     <input type="text" name="censura" id="read">
                     <input type="submit">
                 </form>
