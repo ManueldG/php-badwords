@@ -31,6 +31,7 @@ Stampare a schermo il paragrafo con il testo censurato.
 
     echo ("<!--");
     var_dump($_POST);
+    var_dump($_SERVER);
     echo ("-->");
 
     $censura = strip_tags($_POST['censura']);
