@@ -69,16 +69,7 @@ Stampare a schermo il paragrafo con il testo censurato.
 
                 <p>Lunghezza:{$length}</p>
 
-                <p>{$censored}</p>
-
-                
-
-
-
-
-
-
-            
+                <p>{$censored}</p>       
 
         </body>
 
