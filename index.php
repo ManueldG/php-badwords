@@ -67,7 +67,7 @@ Stampare a schermo il paragrafo con il testo censurato.
 
                 <p>{$paragraph}</p>
 
-                <p>Lunghezza:{$length}</p>
+                <p>Lunghezza:{$length}  URL di richiesta {$_SERVER['HTTP_REFERER']}</p>
 
                 <p>{$censored}</p>       
 
